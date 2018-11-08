@@ -1,4 +1,4 @@
-import os, shutil
+import os, shutil, sys
 import Log as log
 
 def migrate_lists(from_dir, to_dir, closed_lists):
@@ -14,7 +14,7 @@ def migrate_lists(from_dir, to_dir, closed_lists):
             continue
         try:
             log.debug("Copying", entry)
-            shutil.copytree(os.path.join(from_dir, entry), to_dir)
+            shutil.copytree(os.path.join(from_dir, entry), os.path.join(to_dir, entry))
         except Exception as e:
             log.critical("Failure:", e)
             sys.exit(-1)
