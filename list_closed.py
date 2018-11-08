@@ -30,4 +30,4 @@ def list_closed(list_dir, outfile=None):
         log.info("Closed lists written to", outfile)
 
 if __name__ == "__main__":
-    list_closed("/mnt/sympa02_files/list_data/sympa.bard.edu/", outfile="/home/hsartoris/closed_lists")
+    list_closed("/mnt/sympa02_files/list_data/sympa.bard.edu/", outfile="/home/hsartoris/sympa-testing/closed_lists")
