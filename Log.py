@@ -38,7 +38,7 @@ def basicConfig(level, filename=None, runId=None):
             "-"*dashes)
 
 def argsToString(args):
-    caller: str = ""
+    caller = ""
     if len(inspect.stack()) > 2:
         caller = inspect.stack()[2][3] + ": "
         
