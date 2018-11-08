@@ -18,6 +18,7 @@ def list_closed(list_dir, outfile=None):
     access_denied = []
 
     for entry in lists:
+        log.debug("Assessing", entry)
         try:
             with open(os.path.join(list_dir, entry, "config"), "r") as config:
                 if closed_str in config.readlines():
@@ -38,5 +39,5 @@ def list_closed(list_dir, outfile=None):
         log.info("Closed lists written to", outfile)
 
 if __name__ == "__main__":
-    log.basicConfig(level=1)
+    log.basicConfig(level=2)
     list_closed("/mnt/sympa02_files/list_data/sympa.bard.edu/", outfile="/home/hsartoris/sympa-testing/closed_lists")
