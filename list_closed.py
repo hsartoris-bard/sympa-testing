@@ -21,7 +21,7 @@ def list_closed(list_dir, outfile=None):
     for entry in lists:
         try:
             contents = os.listdir(os.path.join(list_dir, entry))
-            if closed_str in contents
+            if closed_str in contents:
                 log.debug(entry)
                 closed_lists.append(entry)
         except OSError:
