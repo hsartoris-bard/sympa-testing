@@ -16,11 +16,19 @@ def list_closed(list_dir, outfile=None):
         f = open(outfile, "w+")
 
     closed_lists = []
+    access_denied = []
 
     for entry in lists:
-        log.debug(entry)
-        if closed_str in os.listdir(os.path.join(list_dir, entry)):
-            closed_lists.append(entry)
+        try:
+            contents = os.listdir(os.path.join(list_dir, entry))
+            if closed_str in contents
+                log.debug(entry)
+                closed_lists.append(entry)
+        except OSError:
+            access_denied.append(entry)
+            log.info("Access denied to", entry)
+            continue
+
 
     log.info("Closed lists:")
     log.info("\n".join(closed_lists))
