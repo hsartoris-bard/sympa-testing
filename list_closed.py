@@ -3,7 +3,7 @@ import Log as log
 
 def list_closed(list_dir, outfile=None):
     #closed_str = "subscribers.closed.dump"
-    closed_str = "members.dump"
+    closed_str = "status closed"
 
     log.info("List data directory:", list_dir)
     
@@ -19,10 +19,10 @@ def list_closed(list_dir, outfile=None):
 
     for entry in lists:
         try:
-            contents = os.listdir(os.path.join(list_dir, entry))
-            if closed_str in contents:
-                log.debug(entry)
-                closed_lists.append(entry)
+            with open(os.path.join(list_dir, entry, "config"), "r") as config:
+                if closed_str in config.readlines():
+                    log.debug(entry)
+                    closed_lists.append(entry)
         except OSError:
             access_denied.append(entry)
             log.info("Access denied to", entry)
