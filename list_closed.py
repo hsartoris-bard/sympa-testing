@@ -4,8 +4,6 @@ import Log as log
 def list_closed(list_dir, outfile=None):
     closed_str = "subscribers.closed.dump"
 
-    log.basicConfig(level=1)
-
     log.info("List data directory:", list_dir)
     
     log.debug("Lists:")
@@ -39,4 +37,5 @@ def list_closed(list_dir, outfile=None):
         log.info("Closed lists written to", outfile)
 
 if __name__ == "__main__":
+    log.basicConfig(level=1)
     list_closed("/mnt/sympa02_files/list_data/sympa.bard.edu/", outfile="/home/hsartoris/sympa-testing/closed_lists")
