@@ -4,7 +4,7 @@ import Log as log
 def list_closed(list_dir, outfile=None):
     closed_str = "subscribers.closed.dump"
 
-    log.basicConfig(level=2)
+    log.basicConfig(level=1)
 
     log.info("List data directory:", list_dir)
     
