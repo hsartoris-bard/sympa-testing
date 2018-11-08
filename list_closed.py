@@ -31,6 +31,7 @@ def list_closed(list_dir, outfile=None):
 
 
     log.info("Closed lists:")
+    closed_lists = sorted(closed_lists)
     log.info("\n".join(closed_lists))
 
     if outfile:
