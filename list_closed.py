@@ -2,7 +2,8 @@ import os
 import Log as log
 
 def list_closed(list_dir, outfile=None):
-    closed_str = "subscribers.closed.dump"
+    #closed_str = "subscribers.closed.dump"
+    closed_str = "members.dump"
 
     log.info("List data directory:", list_dir)
     
