@@ -3,7 +3,7 @@ import Log as log
 
 def list_closed(list_dir, outfile=None):
     #closed_str = "subscribers.closed.dump"
-    closed_str = "status closed"
+    closed_str = "status closed\n"
 
     log.info("List data directory:", list_dir)
     
