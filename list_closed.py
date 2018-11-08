@@ -19,7 +19,7 @@ def list_closed(list_dir, outfile=None):
 
     for entry in lists:
         log.debug(entry)
-        if closed_str in entry:
+        if closed_str in os.listdir(os.path.join(list_dir, entry)):
             closed_lists.append(entry)
 
     log.info("Closed lists:")
