@@ -2,7 +2,7 @@ import os, shutil, sys
 import Log as log
 
 def migrate_lists(from_dir, to_dir, closed_lists, archive=False):
-    log.info("Moving " = ("archive" if archive else "list") + " data from", from_dir, "to", to_dir)
+    log.info("Moving " + ("archive" if archive else "list") + " data from", from_dir, "to", to_dir)
     log.debug("Using following closed_lists:")
     log.debug("\n".join(closed_lists))
 
