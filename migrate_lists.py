@@ -23,7 +23,7 @@ def migrate_lists(from_dir, to_dir, closed_lists):
 if __name__ == "__main__":
     with open("closed_lists", "r") as f:
         closed_lists = [line.strip("\n") for line in f.readlines()]
-    log.basicConfig(2)
+    log.basicConfig(2, filename = "list_migrate_log")
     from_dir = "/mnt/sympa02_files/list_data/sympa.bard.edu/"
     to_dir = "/var/lib/sympa/list_data/sympa.bard.edu/"
     migrate_lists(from_dir, to_dir, closed_lists)
