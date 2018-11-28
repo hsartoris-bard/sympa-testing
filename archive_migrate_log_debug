@@ -1,0 +1,442 @@
+file_out: Stared logging to archive_migrate_log and archive_migrate_log_debug
+--------------- started logging run at 11:51::11/08/18 ---------------
+migrate_lists: Moving archive data from /mnt/sympa02_files/arc/ to /var/lib/sympa/arc/
+migrate_lists: Using following closed_lists:
+migrate_lists: fabclub
+friends
+fsa_cbp_accounts
+fysemstudents
+g_accounts
+gcc
+gema
+gemb
+germanintensive
+gfinance
+hacfnews
+hacnews
+hacsnews
+hcrcmonitors
+hcrcstaff-junk
+henna
+hr-announce
+hr-announcements
+hrevents
+hrevents2
+hrvclub
+hudsonia_be_cd
+hudsonia_be_lt
+intelliworks
+jewishstudies
+landlfaculty
+langlab
+lavozmagazine
+levynewsnames
+lifenets
+lit103all
+litandwa
+litprogjuniorii
+litprogjuniorsall
+meditation
+mentorteachers
+mes
+mfaloa
+mfawritefac
+mfawritestu
+mfgclub
+mindseyetheater
+mlplist
+moderatedll
+musicadfac
+musicftfac
+musicstudents
+nature
+nycmentors
+operaclub
+pke.editor
+quidditch
+readclub
+sawkillmonitors
+secretpal
+seniorprojectapplicants
+seniorprojectboards
+shapenote
+slate
+sld
+smogmonitors
+sociology
+sproj
+sproj-3div
+migrate_lists: Copying hcrcstaff@sympa.bard.edu
+migrate_lists: Copying mat08@sympa.bard.edu
+migrate_lists: Copying itsonus@sympa.bard.edu
+migrate_lists: Copying chacespeakerseries@sympa.bard.edu
+migrate_lists: Copying srcouncil@sympa.bard.edu
+migrate_lists: Copying dancemajors@sympa.bard.edu
+migrate_lists: Copying sjp@sympa.bard.edu
+migrate_lists: Copying vpdean@sympa.bard.edu
+migrate_lists: Skipping closed list intelliworks@sympa.bard.edu
+migrate_lists: Copying arboretumlist@sympa.bard.edu
+migrate_lists: Copying studentsupervisors@sympa.bard.edu
+migrate_lists: Skipping closed list fsa_cbp_accounts@sympa.bard.edu
+migrate_lists: Copying matfac@sympa.bard.edu
+migrate_lists: Copying surpriv@sympa.bard.edu
+migrate_lists: Copying wildroots@sympa.bard.edu
+migrate_lists: Skipping closed list mindseyetheater@sympa.bard.edu
+migrate_lists: Copying litprogramfaculty@sympa.bard.edu
+migrate_lists: Copying healthprof@sympa.bard.edu
+migrate_lists: Copying gradstaff@sympa.bard.edu
+migrate_lists: Copying citsci2016@sympa.bard.edu
+migrate_lists: Copying oisssung@sympa.bard.edu
+migrate_lists: Copying sottery@sympa.bard.edu
+migrate_lists: Copying ccestaff@sympa.bard.edu
+migrate_lists: Copying mfagc@sympa.bard.edu
+migrate_lists: Copying kappahouse@sympa.bard.edu
+migrate_lists: Copying librarystudents@sympa.bard.edu
+migrate_lists: Copying bso@sympa.bard.edu
+migrate_lists: Copying ccsalumnimailinglist2018@sympa.bard.edu
+migrate_lists: Copying mckenziehouse2@sympa.bard.edu
+migrate_lists: Copying rootcellar@sympa.bard.edu
+migrate_lists: Copying pennysaver@sympa.bard.edu
+migrate_lists: Copying heop19@sympa.bard.edu
+migrate_lists: Copying bardems@sympa.bard.edu
+migrate_lists: Copying ugbcomstu@sympa.bard.edu
+migrate_lists: Copying heop18@sympa.bard.edu
+migrate_lists: Copying matcafac@sympa.bard.edu
+migrate_lists: Copying mat11@sympa.bard.edu
+migrate_lists: Copying wsgroup@sympa.bard.edu
+migrate_lists: Copying posse19@sympa.bard.edu
+migrate_lists: Copying springfling@sympa.bard.edu
+migrate_lists: Copying wrugby@sympa.bard.edu
+migrate_lists: Copying mat05@sympa.bard.edu
+migrate_lists: Skipping closed list secretpal@sympa.bard.edu
+migrate_lists: Skipping closed list meditation@sympa.bard.edu
+migrate_lists: Copying envtsummit@sympa.bard.edu
+migrate_lists: Copying becnet@sympa.bard.edu
+migrate_lists: Copying falltransfers2016@sympa.bard.edu
+migrate_lists: Copying naturalsciencesdiv@sympa.bard.edu
+migrate_lists: Copying plhoyt@sympa.bard.edu
+migrate_lists: Copying mfasum@sympa.bard.edu
+migrate_lists: Copying mat12@sympa.bard.edu
+migrate_lists: Skipping closed list gfinance@sympa.bard.edu
+migrate_lists: Copying citsci2018@sympa.bard.edu
+migrate_lists: Copying fall17ecoscholars@sympa.bard.edu
+migrate_lists: Copying launch@sympa.bard.edu
+migrate_lists: Copying drone_roundup@sympa.bard.edu
+migrate_lists: Copying aca@sympa.bard.edu
+migrate_lists: Copying econsummer16@sympa.bard.edu
+migrate_lists: Copying pcs@sympa.bard.edu
+migrate_lists: Copying sawkill@sympa.bard.edu
+migrate_lists: Copying hdtechstu@sympa.bard.edu
+migrate_lists: Copying offcampus-stu@sympa.bard.edu
+migrate_lists: Copying currentpie_exchange@sympa.bard.edu
+migrate_lists: Copying levy_ms_year1@sympa.bard.edu
+migrate_lists: Copying mat10@sympa.bard.edu
+migrate_lists: Copying sao-reminder@sympa.bard.edu
+migrate_lists: Skipping closed list nature@sympa.bard.edu
+migrate_lists: Copying apsstu@sympa.bard.edu
+migrate_lists: Copying lasoclub@sympa.bard.edu
+migrate_lists: Copying plhall@sympa.bard.edu
+migrate_lists: Skipping closed list mfgclub@sympa.bard.edu
+migrate_lists: Copying beop2020@sympa.bard.edu
+migrate_lists: Copying mckenziehouse1@sympa.bard.edu
+migrate_lists: Copying rugby@sympa.bard.edu
+migrate_lists: Copying isoclub@sympa.bard.edu
+migrate_lists: Copying litprogall@sympa.bard.edu
+migrate_lists: Copying psychseniors@sympa.bard.edu
+migrate_lists: Copying translife@sympa.bard.edu
+migrate_lists: Skipping closed list litprogjuniorii@sympa.bard.edu
+migrate_lists: Copying pllaing@sympa.bard.edu
+migrate_lists: Copying bardeats@sympa.bard.edu
+migrate_lists: Skipping closed list quidditch@sympa.bard.edu
+migrate_lists: Copying themix@sympa.bard.edu
+migrate_lists: Copying sric@sympa.bard.edu
+migrate_lists: Skipping closed list slate@sympa.bard.edu
+migrate_lists: Copying sustainabilitycouncil@sympa.bard.edu
+migrate_lists: Copying conservatorylist@sympa.bard.edu
+migrate_lists: Copying sareminder@sympa.bard.edu
+migrate_lists: Copying assembly@sympa.bard.edu
+migrate_lists: Copying 2019grad@sympa.bard.edu
+migrate_lists: Copying faculty@sympa.bard.edu
+migrate_lists: Copying fysemspring@sympa.bard.edu
+migrate_lists: Copying freedomofexpression18@sympa.bard.edu
+migrate_lists: Skipping closed list hrevents2@sympa.bard.edu
+migrate_lists: Copying cie@sympa.bard.edu
+migrate_lists: Copying litmoderatingstu@sympa.bard.edu
+migrate_lists: Copying slc@sympa.bard.edu
+migrate_lists: Copying financialservices@sympa.bard.edu
+migrate_lists: Copying sctechs@sympa.bard.edu
+migrate_lists: Copying mfalist@sympa.bard.edu
+migrate_lists: Copying littaskforce@sympa.bard.edu
+migrate_lists: Copying cepstudents@sympa.bard.edu
+migrate_lists: Skipping closed list fabclub@sympa.bard.edu
+migrate_lists: Copying fall18ecoscholars@sympa.bard.edu
+migrate_lists: Copying buildingmanager@sympa.bard.edu
+migrate_lists: Copying coulterhouse1@sympa.bard.edu
+migrate_lists: Copying biolist@sympa.bard.edu
+migrate_lists: Copying yauchhouse1@sympa.bard.edu
+migrate_lists: Copying fashion@sympa.bard.edu
+migrate_lists: Copying redhook-stu@sympa.bard.edu
+migrate_lists: Copying experimentalhumanities@sympa.bard.edu
+migrate_lists: Copying euscore@sympa.bard.edu
+migrate_lists: Copying cceinterns@sympa.bard.edu
+migrate_lists: Copying artsdivision@sympa.bard.edu
+migrate_lists: Copying bcepnonres@sympa.bard.edu
+migrate_lists: Copying mlk@sympa.bard.edu
+migrate_lists: Copying bsri@sympa.bard.edu
+migrate_lists: Skipping closed list mlplist@sympa.bard.edu
+migrate_lists: Copying plbilley@sympa.bard.edu
+migrate_lists: Copying bcomsfac@sympa.bard.edu
+migrate_lists: Copying ccsstu@sympa.bard.edu
+migrate_lists: Copying mcwilliamshouse1@sympa.bard.edu
+migrate_lists: Copying bard-gmail-migration@sympa.bard.edu
+migrate_lists: Copying socialstudiesdiv@sympa.bard.edu
+migrate_lists: Copying mindfullnessclub@sympa.bard.edu
+migrate_lists: Copying prehealthclub@sympa.bard.edu
+migrate_lists: Copying citsci2017@sympa.bard.edu
+migrate_lists: Copying mfasumfac@sympa.bard.edu
+migrate_lists: Copying tacticaltraining@sympa.bard.edu
+migrate_lists: Copying litseniorproposals@sympa.bard.edu
+migrate_lists: Copying communitydinners@sympa.bard.edu
+migrate_lists: Copying epc@sympa.bard.edu
+migrate_lists: Copying stu18@sympa.bard.edu
+migrate_lists: Skipping closed list hrevents@sympa.bard.edu
+migrate_lists: Copying mba18@sympa.bard.edu
+migrate_lists: Copying harvestingjustice@sympa.bard.edu
+migrate_lists: Copying trustees@sympa.bard.edu
+migrate_lists: Copying bfcclub@sympa.bard.edu
+migrate_lists: Copying bop22@sympa.bard.edu
+migrate_lists: Copying reservesstudents@sympa.bard.edu
+migrate_lists: Copying mathfac@sympa.bard.edu
+migrate_lists: Skipping closed list hr-announcements@sympa.bard.edu
+migrate_lists: Skipping closed list lifenets@sympa.bard.edu
+migrate_lists: Copying tlsstudents@sympa.bard.edu
+migrate_lists: Copying pltieger@sympa.bard.edu
+migrate_lists: Copying operations@sympa.bard.edu
+migrate_lists: Copying levy_ms_year2@sympa.bard.edu
+migrate_lists: Copying filmalumni@sympa.bard.edu
+migrate_lists: Copying tango@sympa.bard.edu
+migrate_lists: Copying controllersoffice@sympa.bard.edu
+migrate_lists: Copying memorydynamicslab@sympa.bard.edu
+migrate_lists: Copying emscouncil@sympa.bard.edu
+migrate_lists: Copying dancestudents@sympa.bard.edu
+migrate_lists: Skipping closed list friends@sympa.bard.edu
+migrate_lists: Copying bcomorch@sympa.bard.edu
+migrate_lists: Copying tivoli-stu@sympa.bard.edu
+migrate_lists: Copying tpmajors@sympa.bard.edu
+migrate_lists: Copying wocu@sympa.bard.edu
+migrate_lists: Skipping closed list smogmonitors@sympa.bard.edu
+migrate_lists: Copying gisplist@sympa.bard.edu
+migrate_lists: Copying mfastu@sympa.bard.edu
+migrate_lists: Copying citsciinfo@sympa.bard.edu
+migrate_lists: Copying plmurphy@sympa.bard.edu
+migrate_lists: Copying ccupdates@sympa.bard.edu
+migrate_lists: Copying hvsn@sympa.bard.edu
+migrate_lists: Copying llimembers@sympa.bard.edu
+migrate_lists: Copying mfastu21@sympa.bard.edu
+migrate_lists: Copying gradforum@sympa.bard.edu
+migrate_lists: Skipping closed list seniorprojectapplicants@sympa.bard.edu
+migrate_lists: Copying charterclubs@sympa.bard.edu
+migrate_lists: Skipping closed list sld@sympa.bard.edu
+migrate_lists: Copying srgemployees@sympa.bard.edu
+migrate_lists: Copying taiko@sympa.bard.edu
+migrate_lists: Copying kappahousefrontdesk@sympa.bard.edu
+migrate_lists: Copying mbb@sympa.bard.edu
+migrate_lists: Copying lunchfolk@sympa.bard.edu
+migrate_lists: Copying sab@sympa.bard.edu
+migrate_lists: Copying cpflist@sympa.bard.edu
+migrate_lists: Copying posse21@sympa.bard.edu
+migrate_lists: Copying landl@sympa.bard.edu
+migrate_lists: Copying ecoscholars@sympa.bard.edu
+migrate_lists: Copying mba19@sympa.bard.edu
+migrate_lists: Copying jrmarshals@sympa.bard.edu
+migrate_lists: Copying happening@sympa.bard.edu
+migrate_lists: Copying citscistudents@sympa.bard.edu
+migrate_lists: Copying bsgelect@sympa.bard.edu
+migrate_lists: Copying cep20@sympa.bard.edu
+migrate_lists: Copying bard-account-notifications@sympa.bard.edu
+migrate_lists: Copying csp19@sympa.bard.edu
+migrate_lists: Copying qsa@sympa.bard.edu
+migrate_lists: Copying eventstaff@sympa.bard.edu
+migrate_lists: Copying brazilianclub@sympa.bard.edu
+migrate_lists: Copying bluejeans@sympa.bard.edu
+migrate_lists: Copying summerinfo@sympa.bard.edu
+migrate_lists: Copying keepsafe@sympa.bard.edu
+migrate_lists: Skipping closed list nycmentors@sympa.bard.edu
+migrate_lists: Copying comissionclub@sympa.bard.edu
+migrate_lists: Skipping closed list mfawritestu@sympa.bard.edu
+migrate_lists: Copying bab@sympa.bard.edu
+migrate_lists: Copying beop2021@sympa.bard.edu
+migrate_lists: Skipping closed list hrvclub@sympa.bard.edu
+migrate_lists: Copying cmialist@sympa.bard.edu
+migrate_lists: Copying physicsmissive@sympa.bard.edu
+migrate_lists: Copying vapstu@sympa.bard.edu
+migrate_lists: Copying posse18@sympa.bard.edu
+migrate_lists: Copying mat07@sympa.bard.edu
+migrate_lists: Copying stu21@sympa.bard.edu
+migrate_lists: Copying cstf@sympa.bard.edu
+migrate_lists: Copying budget_managers@sympa.bard.edu
+migrate_lists: Copying soundcrew@sympa.bard.edu
+migrate_lists: Copying homanlist@sympa.bard.edu
+migrate_lists: Copying ep19@sympa.bard.edu
+migrate_lists: Copying loa@sympa.bard.edu
+migrate_lists: Copying fysemfall@sympa.bard.edu
+migrate_lists: Copying stu22@sympa.bard.edu
+migrate_lists: Copying ehsteeringcommittee@sympa.bard.edu
+migrate_lists: Copying chemmod@sympa.bard.edu
+migrate_lists: Copying citsci2019@sympa.bard.edu
+migrate_lists: Copying chemclass@sympa.bard.edu
+migrate_lists: Copying citsciannounce@sympa.bard.edu
+migrate_lists: Copying lavoz@sympa.bard.edu
+migrate_lists: Copying mfafac@sympa.bard.edu
+migrate_lists: Copying landt@sympa.bard.edu
+migrate_lists: Copying tpstudents@sympa.bard.edu
+migrate_lists: Copying ecoreps@sympa.bard.edu
+migrate_lists: Copying econdept@sympa.bard.edu
+migrate_lists: Copying susicivic@sympa.bard.edu
+migrate_lists: Skipping closed list pke.editor@sympa.bard.edu
+migrate_lists: Skipping closed list hudsonia_be_cd@sympa.bard.edu
+migrate_lists: Copying bardontv@sympa.bard.edu
+migrate_lists: Skipping closed list gemb@sympa.bard.edu
+migrate_lists: Copying mat16@sympa.bard.edu
+migrate_lists: Copying staff@sympa.bard.edu
+migrate_lists: Copying psychmod@sympa.bard.edu
+migrate_lists: Copying contra@sympa.bard.edu
+migrate_lists: Copying clubhead@sympa.bard.edu
+migrate_lists: Copying beop2022@sympa.bard.edu
+migrate_lists: Copying chemmaj@sympa.bard.edu
+migrate_lists: Copying studentservices@sympa.bard.edu
+migrate_lists: Copying studentemployees@sympa.bard.edu
+migrate_lists: Skipping closed list sawkillmonitors@sympa.bard.edu
+migrate_lists: Copying euslist@sympa.bard.edu
+migrate_lists: Copying avstudents@sympa.bard.edu
+migrate_lists: Copying cepfacstaff@sympa.bard.edu
+migrate_lists: Copying csaclub@sympa.bard.edu
+migrate_lists: Copying oisssgrad@sympa.bard.edu
+migrate_lists: Copying 2017grad@sympa.bard.edu
+migrate_lists: Copying posse22@sympa.bard.edu
+migrate_lists: Skipping closed list sproj@sympa.bard.edu
+migrate_lists: Skipping closed list levynewsnames@sympa.bard.edu
+migrate_lists: Copying mbaalumni@sympa.bard.edu
+migrate_lists: Copying ccsmailinglist2018@sympa.bard.edu
+migrate_lists: Copying mbacommunity@sympa.bard.edu
+migrate_lists: Copying lux@sympa.bard.edu
+migrate_lists: Copying citscialumni@sympa.bard.edu
+migrate_lists: Copying develstaff@sympa.bard.edu
+migrate_lists: Copying smcfac@sympa.bard.edu
+migrate_lists: Copying cepalumni@sympa.bard.edu
+migrate_lists: Copying mat14@sympa.bard.edu
+migrate_lists: Copying m.ed20@sympa.bard.edu
+migrate_lists: Copying mbastudents@sympa.bard.edu
+migrate_lists: Skipping closed list mentorteachers@sympa.bard.edu
+migrate_lists: Skipping closed list litprogjuniorsall@sympa.bard.edu
+migrate_lists: Copying mfastu19@sympa.bard.edu
+migrate_lists: Skipping closed list gema@sympa.bard.edu
+migrate_lists: Copying mba20@sympa.bard.edu
+migrate_lists: Copying pldeckerherman@sympa.bard.edu
+migrate_lists: Copying herbalseedlings@sympa.bard.edu
+migrate_lists: Copying mat15@sympa.bard.edu
+migrate_lists: Copying neworleanstls@sympa.bard.edu
+migrate_lists: Copying mathseniors@sympa.bard.edu
+migrate_lists: Skipping closed list gcc@sympa.bard.edu
+migrate_lists: Copying college@sympa.bard.edu
+migrate_lists: Copying hacstudents@sympa.bard.edu
+migrate_lists: Copying test_list@sympa.bard.edu
+migrate_lists: Copying wanews@sympa.bard.edu
+migrate_lists: Copying nedeans@sympa.bard.edu
+migrate_lists: Copying levystaff@sympa.bard.edu
+migrate_lists: Copying mat19@sympa.bard.edu
+migrate_lists: Copying gradprograms@sympa.bard.edu
+migrate_lists: Copying mat09@sympa.bard.edu
+migrate_lists: Copying mfawrite@sympa.bard.edu
+migrate_lists: Skipping closed list musicstudents@sympa.bard.edu
+migrate_lists: Copying bgiaalum@sympa.bard.edu
+migrate_lists: Copying smog@sympa.bard.edu
+migrate_lists: Copying mba21@sympa.bard.edu
+migrate_lists: Copying mbafaculty@sympa.bard.edu
+migrate_lists: Copying nei@sympa.bard.edu
+migrate_lists: Copying mfaalum@sympa.bard.edu
+migrate_lists: Skipping closed list hudsonia_be_lt@sympa.bard.edu
+migrate_lists: Copying nami@sympa.bard.edu
+migrate_lists: Copying stc@sympa.bard.edu
+migrate_lists: Copying history@sympa.bard.edu
+migrate_lists: Copying plcawley@sympa.bard.edu
+migrate_lists: Copying undergraduate-faculty@sympa.bard.edu
+migrate_lists: Copying entertain@sympa.bard.edu
+migrate_lists: Copying psychmaj@sympa.bard.edu
+migrate_lists: Copying cep19@sympa.bard.edu
+migrate_lists: Copying mathannounce@sympa.bard.edu
+migrate_lists: Copying allbeop@sympa.bard.edu
+migrate_lists: Skipping closed list sproj-3div@sympa.bard.edu
+migrate_lists: Copying cmsc@sympa.bard.edu
+migrate_lists: Copying fall16ecoscholars@sympa.bard.edu
+migrate_lists: Copying stu20@sympa.bard.edu
+migrate_lists: Skipping closed list henna@sympa.bard.edu
+migrate_lists: Copying mat06@sympa.bard.edu
+migrate_lists: Skipping closed list langlab@sympa.bard.edu
+migrate_lists: Skipping closed list shapenote@sympa.bard.edu
+migrate_lists: Copying smogtechs@sympa.bard.edu
+migrate_lists: Copying bardprelaw@sympa.bard.edu
+migrate_lists: Copying gcpstu@sympa.bard.edu
+migrate_lists: Copying beop2018@sympa.bard.edu
+migrate_lists: Copying classicalstudiesclub@sympa.bard.edu
+migrate_lists: Copying gradoncampus@sympa.bard.edu
+migrate_lists: Skipping closed list moderatedll@sympa.bard.edu
+migrate_lists: Copying mfasumstu@sympa.bard.edu
+migrate_lists: Copying undergrad@sympa.bard.edu
+migrate_lists: Copying brave@sympa.bard.edu
+migrate_lists: Copying hudsonia@sympa.bard.edu
+migrate_lists: Copying posse20@sympa.bard.edu
+migrate_lists: Copying dbc-club@sympa.bard.edu
+migrate_lists: Skipping closed list lavozmagazine@sympa.bard.edu
+migrate_lists: Copying hralums@sympa.bard.edu
+migrate_lists: Skipping closed list fysemstudents@sympa.bard.edu
+migrate_lists: Copying directors@sympa.bard.edu
+migrate_lists: Copying mbacareer@sympa.bard.edu
+migrate_lists: Copying stuabroad@sympa.bard.edu
+migrate_lists: Skipping closed list litandwa@sympa.bard.edu
+migrate_lists: Copying 2018grad@sympa.bard.edu
+migrate_lists: Copying graddailymail@sympa.bard.edu
+migrate_lists: Copying blithewood@sympa.bard.edu
+migrate_lists: Copying beop2019@sympa.bard.edu
+migrate_lists: Copying mat13@sympa.bard.edu
+migrate_lists: Skipping closed list hcrcmonitors@sympa.bard.edu
+migrate_lists: Copying usfpsusi@sympa.bard.edu
+migrate_lists: Copying russianclub@sympa.bard.edu
+migrate_lists: Copying mfastu20@sympa.bard.edu
+migrate_lists: Copying heop20@sympa.bard.edu
+migrate_lists: Copying campuscenter@sympa.bard.edu
+migrate_lists: Copying litseniorcolloq@sympa.bard.edu
+migrate_lists: Copying fisccomm@sympa.bard.edu
+migrate_lists: Copying mat18@sympa.bard.edu
+migrate_lists: Copying psychintro@sympa.bard.edu
+migrate_lists: Copying usfpsusialums@sympa.bard.edu
+migrate_lists: Copying plbosgang@sympa.bard.edu
+migrate_lists: Copying odaa@sympa.bard.edu
+migrate_lists: Skipping closed list sociology@sympa.bard.edu
+migrate_lists: Copying stu19@sympa.bard.edu
+migrate_lists: Copying overwatch@sympa.bard.edu
+migrate_lists: Skipping closed list landlfaculty@sympa.bard.edu
+migrate_lists: Copying ehfacstaff@sympa.bard.edu
+migrate_lists: Copying wafac@sympa.bard.edu
+migrate_lists: Copying clementestu@sympa.bard.edu
+migrate_lists: Copying achebehouse@sympa.bard.edu
+migrate_lists: Copying eusassociate@sympa.bard.edu
+migrate_lists: Copying cep18@sympa.bard.edu
+migrate_lists: Copying ww-bard@sympa.bard.edu
+migrate_lists: Copying mat17@sympa.bard.edu
+migrate_lists: Copying flcl@sympa.bard.edu
+migrate_lists: Copying heop21@sympa.bard.edu
+migrate_lists: Copying hacfellows@sympa.bard.edu
+migrate_lists: Copying chemsen@sympa.bard.edu
+migrate_lists: Copying ccedriver@sympa.bard.edu
+migrate_lists: Copying travelogue@sympa.bard.edu
+migrate_lists: Copying qpoc@sympa.bard.edu
+migrate_lists: Copying eusstudents@sympa.bard.edu
+migrate_lists: Skipping closed list hr-announce@sympa.bard.edu
+migrate_lists: Copying banner-users@sympa.bard.edu
+migrate_lists: Copying corefachac@sympa.bard.edu
+migrate_lists: Copying communitygarden@sympa.bard.edu
+migrate_lists: Copying lost+found
+migrate_lists: Copying babclub@sympa.bard.edu
+migrate_lists: Copying musicstu14fall@sympa.bard.edu
+migrate_lists: Copying susicivic18@sympa.bard.edu
