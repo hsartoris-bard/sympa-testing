@@ -37,6 +37,8 @@ def basicConfig(level, filename=None, runId=None):
     logger.info("-"*dashes + " started logging run at " + timestamp() + " " + 
             "-"*dashes)
 
+
+
 def argsToString(args):
     caller = ""
     if len(inspect.stack()) > 2:
@@ -54,10 +56,10 @@ def warning(*args):
     logger.warning(argsToString(args))
 
 def error(*args):
-    logger.warning(argsToString(args))
+    logger.error(argsToString(args))
 
 def critical(*args):
-    logger.warning(argsToString(args))
+    logger.critical(argsToString(args))
 
 def timestamp():
     return time.strftime("%H:%M::%D")

@@ -1,3 +1,4 @@
+from multiprocessing.dummy import Pool as ThreadPool
 import os, shutil, sys
 import Log as log
 
@@ -18,6 +19,12 @@ def migrate_lists(from_dir, to_dir, closed_lists, archive=False):
         except Exception as e:
             log.critical("Failure:", e)
             sys.exit(-1)
+
+def main():
+    # replace with command line options maybe
+    # actually that's probably unecessary
+    from_dir = "/mnt/sympa02_files/"
+    to_dir = "/var/lib/sympa/"
 
 if __name__ == "__main__":
     with open("closed_lists", "r") as f:
