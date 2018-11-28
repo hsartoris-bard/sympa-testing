@@ -63,18 +63,13 @@ def archives_to_copy(lists_final, from_dir, arc_subdir, domain):
     log.debug("Archives:")
     log.debug("\n".join(arc_list))
 
-    errcheck = False
     arc_list_final = []
     for l in lists_final:
         l_arc = l + "@" + domain
         if l_arc in arc_list:
             arc_list_final.append(l_arc)
         else:
-            errcheck = True
             log.warning("List {} does not have an archive entry".format(l))
-    if errcheck:
-        log.error("Some lists did not have archives, exiting")
-        sys.exit()
 
     log.debug("Pruned archives:")
     log.debug("\n".join(arc_list_final))
