@@ -42,7 +42,7 @@ mysql --user=root --password=$SQLROOT sympa < $TMPDIR/$DBDUMPFILE
 
 echo "Copying in new lists and archives"
 # this will take care of removing old files, transferring data, and taking ownership
-sudo python3 migrate_data.py overwrite
+sudo python36 migrate_data.py overwrite
 
 # this is gonna need reauthentication, probably
 
