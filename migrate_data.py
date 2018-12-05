@@ -176,7 +176,7 @@ def main():
     # SAFE UNTIL HERE
 
     # some multithreaded copying
-    pool = Pool(8)
+    pool = Pool(30)
 
     log.info("Copying is gonna take a while, sorry")
     log.info("Starting archive copy")
