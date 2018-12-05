@@ -1,4 +1,4 @@
-from multiprocessing.dummy import Pool as ThreadPool
+from multiprocessing.dummy import Pool
 from functools import partial
 from subprocess import call
 import os, shutil, sys
@@ -168,9 +168,6 @@ def main():
             to_dir = os.path.join(to_dir, list_subdir))
     log.info(copy_list_entry)
 
-    # some multithreaded copying
-    list_pool = ThreadPool(4)
-    arc_pool = ThreadPool(4)
 
     if no_overwrite:
         log.info("no_overwrite is set; exiting before copying")
@@ -178,16 +175,21 @@ def main():
 
     # SAFE UNTIL HERE
 
-    log.info("Starting archive copy")
-    arc_pool.map(copy_arc_entry, arc_list_final)
-    log.info("Starting lists copy")
-    list_pool.map(copy_list_entry, lists_final)
+    # some multithreaded copying
+    pool = Pool(8)
 
-    arc_pool.close()
-    list_pool.close()
-    arc_pool.join()
+    log.info("Copying is gonna take a while, sorry")
+    log.info("Starting archive copy")
+    pool.map_async(copy_arc_entry, arc_list_final)
+
+
+    log.info("Starting lists copy")
+    pool.map_async(copy_list_entry, lists_final)
+
+    pool.close()
+
+    pool.join()
     log.info("Archive copy complete")
-    list_pool.join()
     log.info("Lists copy complete")
 
     log.info("Transferring ownership to sympa:sympa")

@@ -40,6 +40,7 @@ echo `ls $TMPDIR`
 echo `file $TMPDIR/$DBDUMPFILE`
 mysql --user=root --password=$SQLROOT sympa < $TMPDIR/$DBDUMPFILE
 
+echo "Removing old lists and archives"
 # this is dumb
 sudo rm -r /var/lib/sympa/list_data/sympa.bard.edu/
 sudo mkdir /var/lib/sympa/list_data/sympa.bard.edu
