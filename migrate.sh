@@ -41,7 +41,7 @@ exit
 
 echo "Copying in new lists and archives"
 # this will take care of removing old files, transferring data, and taking ownership
-sudo python3 migrate_data.py
+sudo python3 migrate_data.py overwrite
 
 # this is gonna need reauthentication, probably
 
