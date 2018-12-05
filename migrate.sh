@@ -7,6 +7,7 @@ echo " "
 SQLSTRING="CREATE DATABASE sympa CHARACTER SET utf8; GRANT ALL PRIVILEGES ON sympa.* to sympa@localhost IDENTIFIED BY ${SQLSYMPA};"
 
 DBDUMP="/home/smaguire/sympa02_db_dump_20181107.sql.gz"
+DBDUMPFILE="sympa02_db_dump_20181107.sql"
 
 FROMDIR="/mnt/sympa02_files/"
 TODIR="/var/lib/sympa/"
@@ -25,15 +26,39 @@ while true; do
 	esac
 done
 
-echo "Deleting old database"
+echo "Stopping services"
+sudo systemctl stop sympa
+sudo systemctl stop wwsympa
 
-echo mysql -u root -p$SQLROOT -e "DROP DATABASE sympa;"
+echo "Deleting old database"
+mysql -u root -p$SQLROOT -e "DROP DATABASE sympa;"
+
+echo "Creating new database"
+mysql -u root -p$SQLROOT -e "${SQLSTRING}"
+
+echo "Copying in database"
+TMPDIR=`mktemp -d`
+sudo cp $DBDUMP $TMPDIR
+gzip -d $TMPDIR/*
+mysql -u root -p$SQLROOT sympa < $TMPDIR/$DBDUMPFILE
+
 exit 
+
+echo "Removing current lists and archives"
 sudo rm -r /var/lib/sympa/list_data/sympa.bard.edu/*
 sudo rm -r /var/lib/sympa/arc/*
 
+echo "Copying in new lists and archives"
 # this will take care of transferring data and ownership
 sudo python3 migrate_data.py $FROMDIR $TODIR
 
+# this is gonna need reauthentication, probably
 
+echo "Upgrading Sympa database"
+sudo -i sympa.pl --upgrade --from=6.1.19 --to=6.2.37b.2
 
+echo "Restarting services"
+sudo systemctl start sympa
+sudo systemctl start wwsympa
+
+echo "Migration complete"
