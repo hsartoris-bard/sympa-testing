@@ -179,8 +179,12 @@ def main():
     # SAFE UNTIL HERE
 
     log.info("Removing old lists and archives")
-    call(['rm', '-r', os.path.join(to_dir, list_subdir, "*")])
-    call(['rm', '-r', os.path.join(to_dir, arc_subdir, "*")])
+    # remove entire directory, then recreate
+    shutil.rmtree(os.path.join(to_dir, list_subdir))
+    os.makedirs(os.path.join(to_dir, list_subdir))
+
+    shutil.rmtree(os.path.join(to_dir, arc_subdir))
+    os.makedirs(os.path.join(to_dir, arc_subdir))
 
     log.info("Starting archive copy")
     arc_pool.map(copy_arc_entry, arc_list_final)
@@ -193,6 +197,7 @@ def main():
     log.info("Archive copy complete")
     list_pool.join()
     log.info("Lists copy complete")
+
     log.info("Transferring ownership to sympa:sympa")
     call(['chown', '-R', 'sympa:sympa', os.path.join(to_dir, list_subdir)])
     call(['chown', '-R', 'sympa:sympa', os.path.join(to_dir, arc_subdir)])
