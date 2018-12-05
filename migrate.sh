@@ -4,8 +4,6 @@ read -s -p "SQL root password:" SQLROOT
 echo " "
 read -s -p "SQL sympa password:" SQLSYMPA
 echo " "
-CREATEDB="CREATE DATABASE sympa CHARACTER SET utf8;"
-DBPRIVS="GRANT ALL PRIVILEGES ON sympa.* TO sympa@localhost IDENTIFIED BY ${SQLSYMPA};"
 
 DBDUMP="/home/smaguire/sympa02_db_dump_20181107.sql.gz"
 DBDUMPFILE="sympa02_db_dump_20181107.sql"
@@ -26,12 +24,13 @@ echo "Stopping services"
 sudo systemctl stop sympa
 sudo systemctl stop wwsympa
 
-echo "Deleting old database"
-mysql --user=root --password=$SQLROOT -e "DROP DATABASE sympa;"
-
-echo "Creating new database"
-mysql --user=root --password=$SQLROOT -e "$CREATEDB"
-mysql --user=root --password=$SQLROOT -e "$DBPRIVS"
+echo "Deleting old database and creating new one"
+mysql --user=root --password=$SQLROOT << EOF
+DROP DATABASE sympa;
+CREATE DATABASE sympa CHARACTER SET utf8;
+GRANT ALL PRIVILEGES ON sympa.* TO sympa@localhost IDENTIFIED BY "${SQLSYMPA}";
+QUIT;
+EOF
 
 exit
 
