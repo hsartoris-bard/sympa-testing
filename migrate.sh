@@ -32,12 +32,12 @@ GRANT ALL PRIVILEGES ON sympa.* TO sympa@localhost IDENTIFIED BY "${SQLSYMPA}";
 QUIT
 EOF
 
-exit
-
 echo "Copying in database"
 TMPDIR=`mktemp -d`
 sudo cp $DBDUMP $TMPDIR
 gzip -d $TMPDIR/*
+echo `ls $TMPDIR`
+echo `file $TMPDIR/$DBDUMPFILE`
 mysql --user=root --password=$SQLROOT sympa < $TMPDIR/$DBDUMPFILE
 
 exit 
