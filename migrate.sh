@@ -49,6 +49,9 @@ sudo mkdir /var/lib/sympa/arc
 
 
 echo "Copying in new lists and archives"
+echo "Take this opportunity to make sure the sympa database has the right password"
+echo "syntax: GRANT ALL PRIVILEGES ON sympa.* TO sympa@localhost IDENTIFIED BY <password>"
+echo "Except <password needs to be in quotes"
 # this will take care of removing old files, transferring data, and taking ownership
 sudo python36 migrate_data.py overwrite
 
