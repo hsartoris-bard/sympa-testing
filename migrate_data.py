@@ -176,7 +176,7 @@ def main():
     # SAFE UNTIL HERE
 
     # some multithreaded copying
-    numThreads = 50
+    numThreads = 80
 
     log.info("Creating pool of {} threads".format(numThreads))
     pool = Pool(numThreads)
