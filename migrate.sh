@@ -26,16 +26,16 @@ sudo systemctl stop sympa
 sudo systemctl stop wwsympa
 
 echo "Deleting old database"
-mysql -u root -p$SQLROOT -e "DROP DATABASE sympa;"
+mysql --user=root --password=$SQLROOT -e "DROP DATABASE sympa;"
 
 echo "Creating new database"
-mysql -u root -p$SQLROOT -e "${SQLSTRING}"
+mysql --user=root --password=$SQLROOT -e "${SQLSTRING}"
 
 echo "Copying in database"
 TMPDIR=`mktemp -d`
 sudo cp $DBDUMP $TMPDIR
 gzip -d $TMPDIR/*
-mysql -u root -p$SQLROOT sympa < $TMPDIR/$DBDUMPFILE
+mysql --user=root --password=$SQLROOT sympa < $TMPDIR/$DBDUMPFILE
 
 exit 
 
