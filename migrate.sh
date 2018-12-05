@@ -1,6 +1,7 @@
 #!/bin/bash
 
 read -s -p "SQL root password:" SQLPASS
+echo $SQLPASS
 exit
 
 DBDUMP="/home/smaguire/sympa02_db_dump_20181107.sql.gz"
