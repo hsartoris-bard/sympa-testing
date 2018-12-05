@@ -178,14 +178,6 @@ def main():
 
     # SAFE UNTIL HERE
 
-    log.info("Removing old lists and archives")
-    # remove entire directory, then recreate
-    shutil.rmtree(os.path.join(to_dir, list_subdir))
-    os.makedirs(os.path.join(to_dir, list_subdir))
-
-    shutil.rmtree(os.path.join(to_dir, arc_subdir))
-    os.makedirs(os.path.join(to_dir, arc_subdir))
-
     log.info("Starting archive copy")
     arc_pool.map(copy_arc_entry, arc_list_final)
     log.info("Starting lists copy")

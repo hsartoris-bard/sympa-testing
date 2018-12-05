@@ -40,6 +40,9 @@ echo `ls $TMPDIR`
 echo `file $TMPDIR/$DBDUMPFILE`
 mysql --user=root --password=$SQLROOT sympa < $TMPDIR/$DBDUMPFILE
 
+sudo rm -r /var/lib/sympa/list_data/sympa.bard.edu/*
+sudo rm -r /var/lib/sympa/arc/*
+
 echo "Copying in new lists and archives"
 # this will take care of removing old files, transferring data, and taking ownership
 sudo python36 migrate_data.py overwrite
