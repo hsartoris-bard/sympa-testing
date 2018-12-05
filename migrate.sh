@@ -4,7 +4,7 @@ read -s -p "SQL root password:" SQLROOT
 echo " "
 read -s -p "SQL sympa password:" SQLSYMPA
 echo " "
-SQLSTRING="CREATE DATABASE sympa CHARACTER SET utf8; GRANT ALL PRIVILEGES ON sympa.* to sympa@localhost IDENTIFIED BY ${SQLSYMPA};"
+SQLSTRING="CREATE DATABASE sympa CHARACTER SET utf8; GRANT ALL PRIVILEGES ON sympa.* TO sympa@localhost IDENTIFIED BY ${SQLSYMPA};"
 
 DBDUMP="/home/smaguire/sympa02_db_dump_20181107.sql.gz"
 DBDUMPFILE="sympa02_db_dump_20181107.sql"
@@ -29,7 +29,7 @@ echo "Deleting old database"
 mysql --user=root --password=$SQLROOT -e "DROP DATABASE sympa;"
 
 echo "Creating new database"
-mysql --user=root --password=$SQLROOT -e "${SQLSTRING}"
+mysql --user=root --password=$SQLROOT -e "$SQLSTRING"
 
 echo "Copying in database"
 TMPDIR=`mktemp -d`
