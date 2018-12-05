@@ -9,13 +9,8 @@ SQLSTRING="CREATE DATABASE sympa CHARACTER SET utf8; GRANT ALL PRIVILEGES ON sym
 DBDUMP="/home/smaguire/sympa02_db_dump_20181107.sql.gz"
 DBDUMPFILE="sympa02_db_dump_20181107.sql"
 
-FROMDIR="/mnt/sympa02_files/"
-TODIR="/var/lib/sympa/"
-
 echo "----Current settings----"
 echo "Loading database from: ${DBDUMP}"
-echo "Copying lists and archives from: ${FROMDIR}"
-echo "Copying lists and archives to: ${TODIR}"
 
 echo "WARNING: proceeding beyond this point will remove ALL Sympa entries from MySQL, list_data, and arc"
 while true; do
@@ -44,13 +39,9 @@ mysql -u root -p$SQLROOT sympa < $TMPDIR/$DBDUMPFILE
 
 exit 
 
-echo "Removing current lists and archives"
-sudo rm -r /var/lib/sympa/list_data/sympa.bard.edu/*
-sudo rm -r /var/lib/sympa/arc/*
-
 echo "Copying in new lists and archives"
-# this will take care of transferring data and ownership
-sudo python3 migrate_data.py $FROMDIR $TODIR
+# this will take care of removing old files, transferring data, and taking ownership
+sudo python3 migrate_data.py
 
 # this is gonna need reauthentication, probably
 
