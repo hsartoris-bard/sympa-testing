@@ -1,5 +1,6 @@
 from multiprocessing.dummy import Pool as ThreadPool
 from functools import partial
+from subprocess import call
 import os, shutil, sys
 import Log as log
 
@@ -82,11 +83,17 @@ def main():
     # do a dry run
     no_copy = True
 
+    if len(sys.argv) < 3:
+        print("Syntax: migrate_data.py from_dir to_dir")
+        exit()
+
     logfile = "migrate_data_log"
     closed_lists_f = "closed_lists"
     whitelist_f = "whitelist"
-    from_dir = "/mnt/sympa02_files/"
-    to_dir = "/var/lib/sympa/"
+    #from_dir = "/mnt/sympa02_files/"
+    #to_dir = "/var/lib/sympa/"
+    from_dir = sys.argv[1]
+    to_dir = sys.argv[2]
     domain = "sympa.bard.edu"
     arc_subdir = "arc"
     list_subdir = os.path.join("list_data", domain)
@@ -135,6 +142,11 @@ def main():
     log.info("Archive copy complete")
     list_pool.join()
     log.info("Lists copy complete")
+    log.info("Transferring ownership to sympa:sympa")
+    call(['chown', '-R', 'sympa:sympa', os.path.join(to_dir, list_subdir)])
+    call(['chown', '-R', 'sympa:sympa', os.path.join(to_dir, arc_subdir)])
+    log.info("Completed transfer")
+
 
 if __name__ == "__main__":
     main()
