@@ -5,7 +5,7 @@ echo " "
 read -s -p "SQL sympa password:" SQLSYMPA
 echo " "
 SQLSTRING="CREATE DATABASE sympa CHARACTER SET utf8; GRANT ALL PRIVILEGES ON sympa.* to sympa@localhost IDENTIFIED BY ${SQLSYMPA};"
-echo $SQLTRING
+echo $SQLSTRING
 exit
 
 DBDUMP="/home/smaguire/sympa02_db_dump_20181107.sql.gz"
