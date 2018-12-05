@@ -176,7 +176,10 @@ def main():
     # SAFE UNTIL HERE
 
     # some multithreaded copying
-    pool = Pool(30)
+    numThreads = 50
+
+    log.info("Creating pool of {} threads".format(numThreads))
+    pool = Pool(numThreads)
 
     log.info("Copying is gonna take a while, sorry")
     log.info("Starting archive copy")
