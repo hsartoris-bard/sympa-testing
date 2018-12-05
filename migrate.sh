@@ -29,7 +29,7 @@ mysql --user=root --password=$SQLROOT << EOF
 DROP DATABASE sympa;
 CREATE DATABASE sympa CHARACTER SET utf8;
 GRANT ALL PRIVILEGES ON sympa.* TO sympa@localhost IDENTIFIED BY "${SQLSYMPA}";
-QUIT;
+QUIT
 EOF
 
 exit
