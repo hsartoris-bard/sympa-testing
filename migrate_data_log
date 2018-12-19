@@ -1,0 +1,133 @@
+--------------- started logging run at 14:51::12/05/18 ---------------
+main: Setting no_overwrite to False; data will be DESTROYED
+main: Copying from: /mnt/sympa02_files/
+main: Copying to: /var/lib/sympa/
+main: Subdirectories: archives=arc lists=list_data/sympa.bard.edu
+load_closed_lists: Reading closed lists file closed_lists
+load_closed_lists: Loaded 64 closed lists
+load_closed_lists: Reading whitelist file whitelist
+load_closed_lists: Whitelist:
+load_closed_lists: mfaloa
+mfawritefac
+mfawritestu
+load_closed_lists: See debug for closed lists excluding whitelist
+load_closed_lists: Final closed lists: 61
+lists_to_copy: Getting lists to copy from /mnt/sympa02_files/list_data/sympa.bard.edu
+lists_to_copy: Got 424 lists to copy
+lists_to_copy: Copying 363 lists after removing closed lists
+archives_to_copy: Checking that each list has a corresponding archive in /mnt/sympa02_files/arc
+archives_to_copy: Got 374 list archives
+archives_to_copy: List 100days does not have an archive entry
+archives_to_copy: List 100daysteam does not have an archive entry
+archives_to_copy: List actorsworkshop does not have an archive entry
+archives_to_copy: List allfacstaff does not have an archive entry
+archives_to_copy: List arthistoryalumni does not have an archive entry
+archives_to_copy: List auth-ccs-senders does not have an archive entry
+archives_to_copy: List auth-cep-senders does not have an archive entry
+archives_to_copy: List auth-college-senders does not have an archive entry
+archives_to_copy: List auth-conservatory does not have an archive entry
+archives_to_copy: List auth-econ-senders does not have an archive entry
+archives_to_copy: List auth-facstaff-senders does not have an archive entry
+archives_to_copy: List auth-gcp-senders does not have an archive entry
+archives_to_copy: List auth-grad-senders does not have an archive entry
+archives_to_copy: List auth-heop-senders does not have an archive entry
+archives_to_copy: List auth-mat-senders does not have an archive entry
+archives_to_copy: List auth-student-senders does not have an archive entry
+archives_to_copy: List bcomugsfac does not have an archive entry
+archives_to_copy: List bop20 does not have an archive entry
+archives_to_copy: List bop21 does not have an archive entry
+archives_to_copy: List campaignplanning2018 does not have an archive entry
+archives_to_copy: List coulterhouse2 does not have an archive entry
+archives_to_copy: List csp20 does not have an archive entry
+archives_to_copy: List ep20 does not have an archive entry
+archives_to_copy: List gccpstu does not have an archive entry
+archives_to_copy: List gocpstu does not have an archive entry
+archives_to_copy: List hacmedia does not have an archive entry
+archives_to_copy: List heop22 does not have an archive entry
+archives_to_copy: List imodulesuser does not have an archive entry
+archives_to_copy: List litnetwork does not have an archive entry
+archives_to_copy: List mcwilliamshouse2 does not have an archive entry
+archives_to_copy: List mfaloa does not have an archive entry
+archives_to_copy: List mfawritefac does not have an archive entry
+archives_to_copy: List oisssnondeg does not have an archive entry
+archives_to_copy: List oisssscholar does not have an archive entry
+archives_to_copy: List pcsincoming does not have an archive entry
+archives_to_copy: List tlsalums does not have an archive entry
+archives_to_copy: List yauchhouse2 does not have an archive entry
+main: Making curried functions:
+main: functools.partial(<function copy_entry at 0x7f9bb3796840>, from_dir='/mnt/sympa02_files/arc', to_dir='/var/lib/sympa/arc')
+main: functools.partial(<function copy_entry at 0x7f9bb3796840>, from_dir='/mnt/sympa02_files/list_data/sympa.bard.edu', to_dir='/var/lib/sympa/list_data/sympa.bard.edu')
+main: Creating pool of 80 threads
+main: Copying is gonna take a while, sorry
+main: Starting archive copy
+main: Starting lists copy
+main: Archive copy complete
+main: Lists copy complete
+main: Transferring ownership to sympa:sympa
+main: Completed transfer
+--------------- started logging run at 13:46::12/18/18 ---------------
+main: Setting no_overwrite to False; data will be DESTROYED
+main: Copying from: /mnt/sympa02_files/
+main: Copying to: /var/lib/sympa/
+main: Subdirectories: archives=arc lists=list_data/sympa.bard.edu
+load_closed_lists: Reading closed lists file closed_lists
+load_closed_lists: Loaded 64 closed lists
+load_closed_lists: Reading whitelist file whitelist
+load_closed_lists: Whitelist:
+load_closed_lists: mfaloa
+mfawritefac
+mfawritestu
+load_closed_lists: See debug for closed lists excluding whitelist
+load_closed_lists: Final closed lists: 61
+lists_to_copy: Getting lists to copy from /mnt/sympa02_files/list_data/sympa.bard.edu
+lists_to_copy: Got 424 lists to copy
+lists_to_copy: Copying 363 lists after removing closed lists
+archives_to_copy: Checking that each list has a corresponding archive in /mnt/sympa02_files/arc
+archives_to_copy: Got 374 list archives
+archives_to_copy: List 100days does not have an archive entry
+archives_to_copy: List 100daysteam does not have an archive entry
+archives_to_copy: List actorsworkshop does not have an archive entry
+archives_to_copy: List allfacstaff does not have an archive entry
+archives_to_copy: List arthistoryalumni does not have an archive entry
+archives_to_copy: List auth-ccs-senders does not have an archive entry
+archives_to_copy: List auth-cep-senders does not have an archive entry
+archives_to_copy: List auth-college-senders does not have an archive entry
+archives_to_copy: List auth-conservatory does not have an archive entry
+archives_to_copy: List auth-econ-senders does not have an archive entry
+archives_to_copy: List auth-facstaff-senders does not have an archive entry
+archives_to_copy: List auth-gcp-senders does not have an archive entry
+archives_to_copy: List auth-grad-senders does not have an archive entry
+archives_to_copy: List auth-heop-senders does not have an archive entry
+archives_to_copy: List auth-mat-senders does not have an archive entry
+archives_to_copy: List auth-student-senders does not have an archive entry
+archives_to_copy: List bcomugsfac does not have an archive entry
+archives_to_copy: List bop20 does not have an archive entry
+archives_to_copy: List bop21 does not have an archive entry
+archives_to_copy: List campaignplanning2018 does not have an archive entry
+archives_to_copy: List coulterhouse2 does not have an archive entry
+archives_to_copy: List csp20 does not have an archive entry
+archives_to_copy: List ep20 does not have an archive entry
+archives_to_copy: List gccpstu does not have an archive entry
+archives_to_copy: List gocpstu does not have an archive entry
+archives_to_copy: List hacmedia does not have an archive entry
+archives_to_copy: List heop22 does not have an archive entry
+archives_to_copy: List imodulesuser does not have an archive entry
+archives_to_copy: List litnetwork does not have an archive entry
+archives_to_copy: List mcwilliamshouse2 does not have an archive entry
+archives_to_copy: List mfaloa does not have an archive entry
+archives_to_copy: List mfawritefac does not have an archive entry
+archives_to_copy: List oisssnondeg does not have an archive entry
+archives_to_copy: List oisssscholar does not have an archive entry
+archives_to_copy: List pcsincoming does not have an archive entry
+archives_to_copy: List tlsalums does not have an archive entry
+archives_to_copy: List yauchhouse2 does not have an archive entry
+main: Making curried functions:
+main: functools.partial(<function copy_entry at 0x7fdf0f100840>, from_dir='/mnt/sympa02_files/arc', to_dir='/var/lib/sympa/arc')
+main: functools.partial(<function copy_entry at 0x7fdf0f100840>, from_dir='/mnt/sympa02_files/list_data/sympa.bard.edu', to_dir='/var/lib/sympa/list_data/sympa.bard.edu')
+main: Creating pool of 80 threads
+main: Copying is gonna take a while, sorry
+main: Starting archive copy
+main: Starting lists copy
+main: Archive copy complete
+main: Lists copy complete
+main: Completed transfer

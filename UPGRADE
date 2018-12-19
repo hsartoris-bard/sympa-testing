@@ -1,0 +1,12 @@
+DBDUMP and DBDUMPFILE need to be updated to point to the new Sympa database dump
+
+whitelist/blacklist need to be finalized
+
+need a copy of directory containing list_data and arc
+
+delete old sympa stuff currently on server
+
+dry run of python script
+
+ports 80,443 open 192.246.229.110
+

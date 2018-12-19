@@ -116,6 +116,7 @@ def archives_to_copy(lists_final, from_dir, arc_subdir, domain):
 
 def copy_entry(entry, from_dir, to_dir):
     shutil.copytree(os.path.join(from_dir, entry), os.path.join(to_dir, entry))
+    call(['chown', '-R', 'sympa:sympa', os.path.join(to_dir, entry)])
 
 def main():
     # default to a dry run
@@ -195,9 +196,9 @@ def main():
     log.info("Archive copy complete")
     log.info("Lists copy complete")
 
-    log.info("Transferring ownership to sympa:sympa")
-    call(['chown', '-R', 'sympa:sympa', os.path.join(to_dir, list_subdir)])
-    call(['chown', '-R', 'sympa:sympa', os.path.join(to_dir, arc_subdir)])
+    #log.info("Transferring ownership to sympa:sympa")
+    #call(['chown', '-R', 'sympa:sympa', os.path.join(to_dir, list_subdir)])
+    #call(['chown', '-R', 'sympa:sympa', os.path.join(to_dir, arc_subdir)])
     log.info("Completed transfer")
 
 
