@@ -5,6 +5,8 @@ if [ -z "$1" ] ; then
 	echo "mysqldump -u sympa -p --databases sympa > sympa02.sql"
 	echo check the sympa02 conf for pass
 	echo ALSO remember to do the whole GRANT ALL PRIVS etc to put in new password
+	echo " "
+	echo Oh yeah also put the database dump as an argument on this script
 	exit 1
 fi
 
